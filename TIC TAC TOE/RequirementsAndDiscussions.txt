@@ -1,0 +1,31 @@
+We want to design TIC TAC TOE game play
+1. Clarifying Questions & Answers
+Candidate: Should the game allow different board sizes, like 4x4 or 5x5, or is it strictly 3x3?
+Interviewer: For this discussion, let’s keep it simple and stick to a classic 3x3 board.
+
+Candidate: What should happen if a player chooses an invalid cell (either out of bounds or already occupied)?
+Interviewer: The move should be declined, and the system should ask the same player to choose a different valid cell. The turn does not switch.
+
+Candidate: Do we need to keep track of a scoreboard across multiple games (wins, losses, draws)?
+Interviewer: Yes, maintaining a scoreboard that tracks wins for 'X', wins for 'O', and draws across multiple sessions is required.
+
+Candidate: Are we supporting a multiple teams?
+Interviewer: No, let's strictly limit it to a 1 vs 1 local multiplayer mode. 
+
+
+2. Requirements
+Functional Requirements:
+
+The game is played on a standard 3x3 grid.
+
+There are two players playing against each other (Player vs. Player) taking turns.
+
+Players use symbols 'X' and 'O'.
+
+The system must detect a winning condition (horizontal, vertical, or diagonal) and announce the winner.
+
+If the board is completely filled and no player has won, the system must declare a draw.
+
+The system must reject invalid moves (e.g., playing out of bounds or on an already occupied cell) and prompt the same player to try again.
+
+The system must maintain a scoreboard tracking the number of wins for each player and the total number of draws across multiple games.
