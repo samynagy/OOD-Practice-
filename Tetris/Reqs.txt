@@ -1,0 +1,15 @@
+The game is played on a 10 (columns) x 20 (rows) grid.
+
+There are 7 classic Tetromino shapes (I, J, L, O, S, T, Z), each composed of 4 blocks.
+
+A random shape spawns at the top-center of the grid and falls downwards.
+
+The player can move the active shape Left, Right, Down (Soft Drop).
+
+The system must detect collisions with the grid boundaries (walls/floor) and previously placed blocks.
+
+When a shape lands and cannot move down further, it locks into place, and a new shape is generated.
+
+If a horizontal row is completely filled, it clears, the blocks above it fall, and the player earns a score (100 for 1 line, 300 for 2, 500 for 3, 800 for 4).
+
+The game ends (Game Over) when newly generated shapes cannot enter the board because the grid is filled to the top.
